@@ -4,7 +4,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Error from './components/Error';
-
+import Insta from './components/Insta';
+import Mail from './components/Mail'
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,16 +22,19 @@ function App() {
 
         <Routes>
           {/* Home */}
-        <Route path='/' element={<Home />} />
-        {/* About */}
-        <Route path='/about' element={<About />} />
-        {/* Contact */}
-        <Route path='/contact' element={<Contact />} />
-        {/* Error */}
-        <Route path='*' element={<Error />} />
+          <Route path='/' element={<Home />} />
+          {/* About */}
+          <Route path='/about' element={<About />} />
+          {/* Contact  */}
+          <Route path='/contact' element={<Contact />}>
+            <Route path='insta' element={<Insta />} />
+            <Route path='mail' element={<Mail />} />
+          </Route>
+            {/* Error page */}
+            <Route path='*' element={<Error />} />
         </Routes>
-        
-    </div>
+
+      </div>
     </Router>
   );
 }
