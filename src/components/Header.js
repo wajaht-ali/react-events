@@ -17,7 +17,7 @@ const Header = () => {
         {/* <Link to={'/contact'}> <h1>Contact</h1> </Link> */}
         <NavLink to={'/contact'} style={navStyleLink}> <h1>Contact</h1></NavLink>
         {/* <Link to={'/Error 404| Page Not Found'}> <h1>Error</h1> </Link> */}
-        <NavLink to={'/Erro 404'} style={navStyleLink}> <h1>Error</h1></NavLink>
+        <NavLink to={'/Error 404'} style={navStyleLink}> <h1>Error</h1></NavLink>
     </div>
   )
 }
