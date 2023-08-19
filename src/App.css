@@ -8,6 +8,8 @@
   flex-direction: row;
   justify-content: center;
   background-color: #00ff;
+  padding: 2rem;
+  color: red;
 }
 
 .data h1 {
@@ -15,5 +17,12 @@
   text-decoration: none;
   cursor: pointer;
   margin: .3rem .5rem;
+  text-align: center;
 }
 
+.link:hover {
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+  background-color: crimson;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Error = () => {
   const navigate = useNavigate();
@@ -7,7 +7,9 @@ const Error = () => {
   return (
     <div>
         <h2 >404 Page Not Found!</h2>
-        <button onClick={() => navigate('/')}>Go Home</button>
+        {/* <button onClick={() => navigate('/')}>Go Home</button> */}
+        {/* <Link to={"/"}><button>Home</button></Link> */}
+        <button onClick={() => navigate("/")}>Home</button>
     </div>
   )
 }
